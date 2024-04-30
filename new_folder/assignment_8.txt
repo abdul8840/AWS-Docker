@@ -1,0 +1,36 @@
+// launch 3 instance and install docker
+
+docker info
+
+docker swarm --help
+
+docker swarm init
+
+// copy the link paste in worker node
+
+mkdir web_app
+
+nano app.py
+
+nano docker-compose.yml
+
+nano Dockerfile
+
+nano requirment.txt
+
+docker build -t wed_app
+
+docke tag web_app:latest abdul8840/web_app:1.0
+
+
+docker login
+
+docker push abdul8840/web_app:latest
+
+docker stack deploy -c docker-compose.yml web_app
+
+docker node ls 
+
+docker container ls
+
+// copy workers ip addresses
