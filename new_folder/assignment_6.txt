@@ -1,0 +1,44 @@
+// docker swarm
+
+docker info
+
+docker swarm --help
+
+docker swarm init
+
+docker service --help
+
+docker service create alpine ping www.google.com
+
+docker service ls
+
+docker service ps service_id
+
+docker container ls
+
+docker node ls
+
+docker service scale service_id=5
+
+docker service ps service_id
+
+docker service rollback service_id
+
+//multiple system
+
+//on master node
+
+docker swarm join-token worker
+
+//copy link past in worker node to join
+
+docker node ls
+
+docker service create --replicas 5 alpine ping www.dypiu.ac.in
+
+
+
+
+docker swarm leave
+
+docker node rm Service_id
